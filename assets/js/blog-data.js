@@ -1,7 +1,7 @@
 $(document)
   .ready(() => {
     $.get({
-      url: 'https://blog.turtlecoin.lol/feed/json',
+      url: 'https://jsonp.afeld.me/?url=https://blog.turtlecoin.lol/feed/json',
       json: true,
       success: function(data) {
         $('#blog-feed')
