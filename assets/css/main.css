@@ -4173,3 +4173,8 @@ body.is-preload #wrapper {
     background-color: transparent !important;
     font-size: 2.2rem !important;
 }
+
+.transparent-icon:hover:before {
+    color: #ffe4b4 !important;
+    cursor: pointer;
+}
