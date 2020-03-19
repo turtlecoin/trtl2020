@@ -4167,3 +4167,9 @@ body.is-preload #wrapper {
         transform: none;
     }
 }
+
+.transparent-icon:before {
+    color: white !important;
+    background-color: transparent !important;
+    font-size: 2.2rem !important;
+}
