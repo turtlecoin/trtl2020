@@ -1,0 +1,34 @@
+baseurl: "" 
+url: "https://turtlecoin.lol"
+
+# Do not copy these files to the build folder
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - scripts
+ - Rakefile
+ - README.md
+ - .bundle
+ - vendor
+
+gems:
+ - jekyll-multiple-languages-plugin
+
+# Localization config
+languages: ["en", "es"]
+# languages: ["en", "af", "at", "cz", "de", "es", "fr", "it", "kr", "hu", "nl", "pt-br", "ru", "tr", "zh",] # enable during development to see text keys at /dev/
+
+language_names:
+  en:
+    short: en
+    full: English
+  es:
+    short: es
+    full: Español
+  # dev:
+  #   short: dev
+  #   full: Development
+
+
+# couldn't make this work 
+# exclude_from_localizations: ["assets"]
