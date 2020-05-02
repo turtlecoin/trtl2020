@@ -15,7 +15,7 @@ gems:
  - jekyll-multiple-languages-plugin
 
 # Localization config
-languages: ["en", "es"]
+languages: ["en", "es", "de"]
 # languages: ["en", "af", "at", "cz", "de", "es", "fr", "it", "kr", "hu", "nl", "pt-br", "ru", "tr", "zh",] # enable during development to see text keys at /dev/
 
 language_names:
@@ -25,6 +25,9 @@ language_names:
   es:
     short: es
     full: Español
+  de:
+    short: de
+    full: Deutsch
   # dev:
   #   short: dev
   #   full: Development
