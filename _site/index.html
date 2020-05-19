@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Ethereal by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
 
@@ -32,25 +32,25 @@
 <meta property="og:site_name" content="TurtleCoin"/>
 <meta property="og:title" content="TurtleCoin.lol - A Fun, Fast, and Easy Way to Send Money To Friends and Businesses"/>
 <meta property="og:description" content="TurtleCoin is a fun way to send money privately to friends or businesses. TurtleCoin is a community-developed, open source cryptocurrency that is easy to mine, and has a graphical wallet."/>
-<meta property="og:image" content="https://turtlecoin.lol/assets/images/turtlecoin_opengraph_colorbg.jpg"/>
+<meta property="og:image" content="http://localhost:4000/assets/images/turtlecoin_opengraph_colorbg.jpg"/>
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@_turtlecoin" />
 <meta name="twitter:title" content="TurtleCoin.lol - A Fun, Fast, and Easy Way to Send Money To Friends and Businesses"/>
 <meta name="twitter:description" content="TurtleCoin is a fun way to send money privately to friends or businesses. TurtleCoin is a community-developed, open source cryptocurrency that is easy to mine, and has a graphical wallet." />
-<meta name="twitter:image" content="https://turtlecoin.lol/assets/images/twitter-summary-card.jpg" />
+<meta name="twitter:image" content="http://localhost:4000/assets/images/twitter-summary-card.jpg" />
 
-<link rel="canonical" href="https://turtlecoin.lol/">
+<link rel="canonical" href="http://localhost:4000/">
 
-
-  
-    <link rel="alternate" href="https://turtlecoin.lol/" hreflang="en">
-    <link rel="alternate" href="https://turtlecoin.lol/" hreflang="x-default">
-  
 
   
-    <link rel="alternate" href="https://turtlecoin.lol/es/" hreflang="es">
+    <link rel="alternate" href="http://localhost:4000/" hreflang="en">
+    <link rel="alternate" href="http://localhost:4000/" hreflang="x-default">
+  
+
+  
+    <link rel="alternate" href="http://localhost:4000/es/" hreflang="es">
   
 
          
@@ -63,13 +63,90 @@
 />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
     </head>
-    <body class="is-preload">
+    <body class="is-preload" style="">
         <!-- Page Wrapper -->
+            <div id="page-wrapper">
             <!-- Wrapper -->
             <div id="wrapper">
                 <!-- Panel (Banner) -->
                 <section class="panel banner left">
+
                     <div class="content color0 span-3-75">
+                    <div class="Languages">
+  <div class="Language-select">
+    <select class="Languages-btns" onchange="location = this.value;">
+        
+
+      
+      <option
+        value="/"
+        class="Language-btn"
+        selected
+        >English</option
+      >
+          
+      <option
+        value="/es/"
+        class="Language-btn"
+        >Español</option
+      >
+
+        
+    </select>
+  </div>
+</div>
+
+<style>
+  .Languages {
+    padding: 1.5rem 3.5rem 2rem 3.5rem;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+    /*margin-top: 2rem;*/
+    display: inline-block;
+    /*position: relative;*/
+  }
+  .Languages .Languages-btns {
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: transparent;
+    background-image: none;
+  }
+  .Languages .Language-select {
+    position: relative;
+    display: block;
+    width: 10rem;
+    height: 3em;
+    background: transparent;
+    overflow: hidden;
+    opacity: 1;
+    border-radius: 0.25em;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+  }
+  .Languages .Languages-btns {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    color: rgba(255, 255, 255, 0.875);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 736px) {
+    .Languages {
+    padding: .8875rem 1.75rem 1.3875rem 1.75rem;
+
+  }
+}
+</style>
+
                         <span
                             ><img
                                 height="100px"
