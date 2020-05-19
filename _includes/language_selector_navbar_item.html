@@ -1,32 +1,31 @@
 <div class="Languages">
   <div class="Language-select">
     <select class="Languages-btns" onchange="location = this.value;">
-      {% for lang in site.languages %} {% if site.lang == lang %} 
-
-      {% if site.default_lang == lang %}
+      {% for lang in site.languages %} {% if site.lang == lang %} {% if
+      site.default_lang == lang %}
       <option
         value="{{ site.baseurl_root }}{{ page.url }}"
         class="Language-btn"
         selected
-        >{{ site.language_names[lang].full }}</option
+        >{{ site.language_names[lang].short }}</option
       >
       {% else %}
       <option
         value="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}"
         class="Language-btn"
         selected
-        >{{ site.language_names[lang].full }}</option
+        >{{ site.language_names[lang].short }}</option
       >
 
       {% endif %} {% else %} {% if site.default_lang == lang %}
       <option value="{{ site.baseurl_root }}{{ page.url }}" class="Language-btn"
-        >{{ site.language_names[lang].full }}</option
+        >{{ site.language_names[lang].short }}</option
       >
       {% else %}
       <option
         value="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}"
         class="Language-btn"
-        >{{ site.language_names[lang].full }}</option
+        >{{ site.language_names[lang].short }}</option
       >
 
       {% endif %} {% endif %} {% endfor %}
@@ -36,15 +35,16 @@
 
 <style>
   .Languages {
-    padding: 1.5rem 3.5rem 2rem 3.5rem;
+    /*padding: 1.5rem 3.5rem 2rem 3.5rem;*/
     z-index: 999;
     position: absolute;
     left: 0;
     top: 0;
-    text-align: left;
+    text-align: center;
     /*margin-top: 2rem;*/
     display: inline-block;
     /*position: relative;*/
+    padding: 1rem 0 0 5rem;
   }
   .Languages .Languages-btns {
     -moz-appearance: none;
@@ -55,17 +55,24 @@
     border: 0 !important;
     background: transparent;
     background-image: none;
+    padding: 6px;
+    text-transform: uppercase;
   }
   .Languages .Language-select {
     position: relative;
     display: block;
-    width: 10rem;
+    width: 3rem;
     height: 3em;
     background: transparent;
     overflow: hidden;
     opacity: 1;
     border-radius: 0.25em;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-align-last: center;
+    -webkit-text-align-last: center;
+    max-width: 6rem;
+    /*opacity: .9;*/
   }
   .Languages .Languages-btns {
     width: 100%;
@@ -76,11 +83,23 @@
     color: rgba(255, 255, 255, 0.875);
     cursor: pointer;
   }
+  
+  /*hide this on small devices*/
+   .panel>.Languages {
+      display: none;
+    }
 
   @media screen and (max-width: 736px) {
-    .Languages {
-    padding: .8875rem 1.75rem 1.3875rem 1.75rem;
+    #page-wrapper>.Languages {
+      display: none;
+    }
+    /*show this on small devices*/
+    .panel>.Languages {
+      display: inline-block;
+    }
 
+    .Languages {
+      padding: 0.8875rem 1.75rem 1.3875rem 1.75rem;
+    }
   }
-}
 </style>

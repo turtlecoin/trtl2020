@@ -25,6 +25,7 @@ Commits to `master` auto deploy via Travis CI to GitHub pages.
 
 ### Deploying manually
 
+* `chmod +x ./scripts/build.sh  && chmode +x ./scripts/deploy.sh`
 * `./scripts/build.sh`
 * `./scripts/deploy.sh` 
 
