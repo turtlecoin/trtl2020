@@ -5,9 +5,9 @@ description: meta.description
 
 <!DOCTYPE html>
 <!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Ethereal by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="{{ site.lang }}">
 
@@ -15,15 +15,21 @@ description: meta.description
         {% include meta.html %}
          {% include stylesheets.html %}
     </head>
-    <body class="is-preload">
+    <body class="is-preload" style="">
+
         <!-- Page Wrapper -->
+            <div id="page-wrapper">
+                    {% include language_selector_navbar_item.html %}
             <!-- Wrapper -->
             <div id="wrapper">
                 <!-- Panel (Banner) -->
                 <section class="panel banner left">
+                            {% include language_selector_navbar_item.html %}
                     <div class="content color0 span-3-75">
+
                         <span
-                            ><img
+                            >
+                            <img
                                 height="100px"
                                 width="100px"
                                 align="right"
